@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Todo</string>
+    <string name="priorita">Priority:</string>
+    <string name="poznamka">Todo:</string>
+    <string name="empty">Empty</string>
+    <string name="add_todo">Add todo</string>
+    <string name="add_tag">Add tag</string>
+    <string name="created">Created:</string>
+    <string name="realize">Date realized</string>
+    <string name="tag">Tag:</string>
+    <string name="edit_delete_tag">Edit or delete dag</string>
+    <string name="add_new_todo">Add new todo</string>
+    <string name="date">mm.dd.yyyy</string>
+    <string name="priority_one"> ! </string>
+    <string name="priority_two"> !!</string>
+    <string name="priority_three"> !!!</string>
+    <string name="alarm">Alarm</string>
+
+</resources>

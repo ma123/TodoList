@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:background="@color/dark_cyan"
+            android:orientation="horizontal"
+            android:padding="7sp" >
+
+            <ImageButton
+                android:id="@+id/button_check"
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:paddingBottom="5sp"
+                android:paddingTop="5sp"
+                android:src="@drawable/check_false" />
+
+            <ViewSwitcher
+                android:id="@+id/my_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="10sp"
+                    android:text="@string/empty"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edit_todo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/empty"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" >
+                </EditText>
+            </ViewSwitcher>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="13sp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/button01_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/priority_green" />
+
+            <ImageButton
+                android:id="@+id/button02_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/priority_orange" />
+
+            <ImageButton
+                android:id="@+id/button03_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@drawable/priority_red" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_realize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/calendar_icon"
+            android:gravity="center"
+            android:text="@string/realize"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/alarm_icon"
+            android:gravity="center"
+            android:text="@string/alarm"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_notepad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/empty"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:scrollbars="vertical" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/button_del_todo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/trash" />
+    </LinearLayout>
+
+</LinearLayout>
